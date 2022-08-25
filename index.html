@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Confidential</title>
+
+    <link rel="icon" href="./video/shield_logo.jpg">
+
+    <link rel="stylesheet" href="./css/page_style.css">
+    <link rel="stylesheet" href="./css/hack.css" />
+	</head>
+
+	<body>
+    <div class="initial-loading" id="first-loader">
+			<div class="wrapper">
+				<span class="hacking-style">Decrypting</span>
+				<span class="hacking-style">...</span>
+			</div>
+    </div>
+    <div class="page">
+			<div class="video-container">
+				<video src="./video/presentation_video.mp4" id="video_frame" >
+					<!--<source src="./video/Presentation_video.mp4" type="video/mp4">-->
+				</video>
+			</div>
+			<div class="personal-data">
+				<div id="second-loader" class="second-loading">
+					<div class="wrapper">
+						<span class="hacking-style">hacking into database</span>
+						<span class="hacking-style">...</span>
+					</div>
+				</div>
+
+				<div id="name">
+					<span class="label">Name</span>
+					<span class="hacking-style name">Blake, Lucas</span>
+				</div>
+				<div id="age">
+					<span class="label">Age</span>
+					<span class="hacking-style age">17</span>
+				</div>
+				<div id="location">
+					<span class="label">Location</span>
+					<span class="hacking-style location">CABA, Argentina</span>
+				</div>
+				<div id="hobbies">
+					<span class="label">Hobbies</span>
+					<span class="hacking-style" id="hobbie1">Web Developing</span>
+					<span class="hacking-style" id="hobbie2">Reading</span>
+					<span class="hacking-style" id="hobbie3">Writing</span>
+					<span class="hacking-style" id="hobbie4">Studying Japanese</span>
+				</div>
+				<div id="qualities">
+					<span class="label">Qualities</span>
+					<span class="hacking-style" id="quality1">Confident</span>
+					<span class="hacking-style" id="quality4">Creative</span>
+					<span class="hacking-style" id="quality2">Smart</span>
+					<span class="hacking-style" id="quality3">Courageous</span>
+					<span class="hacking-style" id="quality5">Passionate</span>
+				</div>
+
+				<div id="waiting-confirmation">
+					<span class="hacking-style">Waiting for confirmation</span>
+					<div></div>
+				</div>  
+			</div>
+    </div>
+		<div id="turnoff-effect">
+			<div></div>
+		</div>
+		<script src="./js/video_script.js"></script>
+	</body>
+</html>

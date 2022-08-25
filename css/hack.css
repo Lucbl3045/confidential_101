@@ -1,0 +1,359 @@
+.hacking-style {
+  font-family: monospace;
+  font-size: 1.9rem;
+  color: #8bf098;
+}
+
+.label {
+  font-size: 1rem;
+  font-family: monospace;
+  color: #62bf6e;
+  margin-top: 1rem;
+}
+
+@keyframes decrypting {
+  0% { width: 0; }
+  33% { width: 1ch; }
+  66% { width: 2ch; }
+  100% { width: 3ch; }
+}
+
+.initial-loading {
+  position: fixed;
+  top: 0;
+  right:0;
+  left:0;
+  bottom: 0;
+
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  z-index: 5000;;
+}
+
+.initial-loading .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  font-family: monospace;
+  font-size: 2rem;
+  width: 14ch;
+}
+
+.initial-loading .wrapper span:nth-child(2) {
+  display: block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: decrypting 1s infinite;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#name .name {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#name.visible .label {
+  opacity: 1;
+}
+
+#name.visible .name {
+  animation: nameAnimation 1s steps(12) forwards;
+}
+
+#age {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#age .age {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#age.visible .label {
+  opacity: 1;
+}
+
+#age.visible .age {
+  animation: nameAnimation 1s steps(2) forwards;
+}
+
+#location {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#location .location {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#location.visible .label {
+  opacity: 1;
+}
+
+#location.visible .location {
+  animation: locationAnimation 1s steps(15) forwards;
+}
+
+#hobbies.visible .label {
+  opacity: 1;
+}
+
+#hobbie1 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#hobbie1.visible {
+  animation: hobbie1 1s steps(14) forwards;
+}
+
+#hobbie2 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#hobbie2.visible {
+  animation: hobbie2 1s steps(7) forwards;
+}
+
+#hobbie3 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#hobbie3.visible {
+  animation: hobbie3 1s steps(7) forwards;
+}
+
+#hobbie4 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#hobbie4.visible {
+  animation: hobbie4 1s steps(17) forwards;
+}
+
+#qualities.visible .label {
+  opacity: 1;
+}
+
+#quality1 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#quality1.visible {
+  animation: quality1 1s steps(9) forwards;
+}
+
+#quality2 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#quality2.visible {
+  animation: quality2 1s steps(5) forwards;
+}
+
+#quality3 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#quality3.visible {
+  animation: quality3 1s steps(10) forwards;
+}
+
+#quality4 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#quality4.visible {
+  animation: quality4 1s steps(8) forwards;
+}
+
+#quality5 {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+#quality5.visible {
+  animation: quality5 1s steps(10) forwards;
+}
+
+@keyframes nameAnimation {
+  from { width: 0; }
+  to { width: 12ch }
+}
+
+@keyframes ageAnimation {
+  from { width: 0; }
+  to { width: 2ch }
+}
+
+@keyframes locationAnimation {
+  from { width: 0; }
+  to { width: 15ch }
+}
+
+@keyframes hobbie1 {
+  from { width: 0; }
+  to { width: 14ch }
+}
+
+@keyframes hobbie2 {
+  from { width: 0; }
+  to { width: 7ch }
+}
+
+@keyframes hobbie3 {
+  from { width: 0; }
+  to { width: 7ch }
+}
+
+@keyframes hobbie4 {
+  from { width: 0; }
+  to { width: 17ch }
+} 
+
+@keyframes quality1 {
+  from { width: 0; }
+  to { width: 9ch }
+}
+
+@keyframes quality2 {
+  from { width: 0; }
+  to { width: 5ch }
+}
+
+@keyframes quality3 {
+  from { width: 0; }
+  to { width: 10ch }
+}
+
+@keyframes quality4 {
+  from { width: 0; }
+  to { width: 8ch }
+}
+
+@keyframes quality5 {
+  from { width: 0; }
+  to { width: 10ch }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 24ch }
+}
+
+@keyframes blinking {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+#waiting-confirmation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#waiting-confirmation span {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#waiting-confirmation div {
+  width: 1.5rem;
+  height: 2.25rem;
+  background-color: #8bf098;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+
+  display: none;
+
+  animation: blinking 0.8s infinite;
+}
+
+#waiting-confirmation.visible div {
+  display: block;
+}
+
+#waiting-confirmation.visible span {
+  animation: typing 1s steps(24) forwards;
+}
+
+#turnoff-effect {
+  display: none;
+}
+
+#turnoff-effect.visible {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+
+  background-color: black;
+
+  z-index: 10000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#turnoff-effect.visible div {
+  width: 100vw;
+  height: 100vh;
+  animation: turnoff 1s forwards;
+}
+
+@keyframes turnoff {
+  0% { background-color: #000000; }
+  10% { background-color: #ffffff; width: 100vw; height: 100vh; }
+  40% { height: 5vh; border-radius: 50% }
+  80% { width: 5vw }
+  90% { background-color: #000000;}
+  100% { background-color: #000000; width: 0; height: 0}
+}
+
